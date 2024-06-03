@@ -29,11 +29,33 @@
             } else {
                 return "scissors";
             }
-        
+        }
         // Test that your function returns what you expect using console.log or the browser developer tools before advancing to the next step.
         console.log(getComputerChoice())
 
-        //
+
+        //Step 3: Write the logic to get the human choice
+        // Create a new function named getHumanChoice.
+        const getHumanChoice = () => {
+            
+            // Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
+            //get user input
+            let userInput = prompt("Please select Rock, Paper, or Scissors.")
+
+            //create if statements to validate user input (attention to case sensitivity)
+            if (userInput.toLowerCase() === "rock") {
+                return 'rock';
+            } else if (userInput.toLowerCase() === "paper") {
+                return "paper";
+            } else if (userInput.toLowerCase() === "scissors") {
+                return "scissors"
+            } else {
+                return "Please select appropriate choices."
+            }
+        }
+
+        // Test what your function returns by using console.log.
+        console.log(getHumanChoice())
 
 
 
